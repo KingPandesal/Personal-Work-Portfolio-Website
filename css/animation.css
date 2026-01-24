@@ -1,0 +1,105 @@
+/*====================ANIMATIONS====================*/
+
+/* container for floating circles */
+.floating-circles {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* style each circle */
+.floating-circles div {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  animation: float linear infinite;
+}
+
+/* individual circles with size, position, duration, and delay */
+.floating-circles div:nth-child(1) {
+  width: 80px; height: 80px;
+  left: 10%; bottom: -100px;
+  animation-duration: 30s;
+  animation-delay: 0s;
+}
+
+.floating-circles div:nth-child(2) {
+  width: 120px; height: 120px;
+  left: 50%; bottom: -150px;
+  animation-duration: 40s;
+  animation-delay: 5s;
+}
+
+.floating-circles div:nth-child(3) {
+  width: 60px; height: 60px;
+  left: 80%; bottom: -80px;
+  animation-duration: 35s;
+  animation-delay: 10s;
+}
+
+.floating-circles div:nth-child(4) {
+  width: 100px; height: 100px;
+  left: 30%; bottom: -120px;
+  animation-duration: 28s;
+  animation-delay: 2s;
+}
+
+.floating-circles div:nth-child(5) {
+  width: 90px; height: 90px;
+  left: 70%; bottom: -100px;
+  animation-duration: 33s;
+  animation-delay: 7s;
+}
+
+.floating-circles div:nth-child(6) {
+  width: 80px; height: 80px;
+  left: 10%; bottom: -100px;
+  animation-duration: 30s;
+  animation-delay: 3s;
+}
+
+.floating-circles div:nth-child(7) {
+  width: 120px; height: 120px;
+  left: 25%; bottom: -150px;
+  animation-duration: 35s;
+  animation-delay: 8s;
+}
+
+.floating-circles div:nth-child(8) {
+  width: 60px; height: 60px;
+  left: 50%; bottom: -80px;
+  animation-duration: 32s;
+  animation-delay: 1s;
+}
+
+.floating-circles div:nth-child(9) {
+  width: 100px; height: 100px;
+  left: 70%; bottom: -120px;
+  animation-duration: 28s;
+  animation-delay: 6s;
+}
+
+.floating-circles div:nth-child(10) {
+  width: 90px; height: 90px;
+  left: 85%; bottom: -100px;
+  animation-duration: 33s;
+  animation-delay: 4s;
+}
+
+/* keyframes for floating up */
+@keyframes float {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+  10% { opacity: 1; }
+  50% {
+    transform: translateY(-110vh) scale(1.1);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-120vh) scale(1);
+    opacity: 0;
+  }
+}

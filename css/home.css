@@ -16,9 +16,11 @@
 
 body {
     background-color: var(--bg-color);
+    position: relative;
+    overflow: hidden;
 }
 
-a {
+a, button {
     cursor: pointer;
 }
 
@@ -40,8 +42,38 @@ main {
     background-color: red;
 } */
 
+.hero-photo {
+  position: relative;
+  display: inline-block;
+}
+
 .hero-photo img {
     height: 100%;
+    border-radius: 0 0 0 100px;
+    display: block;
+}
+
+.img-quote {
+    position: absolute;
+    bottom: 55px;
+    left: 16px;
+
+    max-width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0.3rem 0.6rem;
+    color: white;
+
+    font-family: var(--poppins);
+    font-size: 1vw;
+    line-height: 1.3;
+
+    border-radius: 10px;
+}
+
+.hero-text-buttons {
+    /* margin-left: 5rem; */
+    max-width: 30rem;
 }
 
 .hero-text {
@@ -49,16 +81,35 @@ main {
     color: white;
 }
 
-.hero-text h1 {
-    font-family: var(--qwigley);
+.hero-text h1, h2 {
+    font-family: var(--poppins);
+    font-size: clamp(2rem, 3vw, 3.5rem); 
+    /* min, ideal, max */
+    /* background-color: yellow; */
+}
+
+.highlight-name {
+    color: var(--pink2);
+    text-decoration: underline;
 }
 
 .hero-text p {
     font-family: var(--protest-strike);
+    margin-top: 0.3rem;
+    font-size: 1rem; 
+    /* background-color: aqua; */
 }
 
+.hero-text p a {
+    color: var(--pink);
+}
+
+/* buttons */
+
 .hero-buttons {
+    margin-top: 1rem;
     display: flex;
+    gap: 1rem;
     /* background-color: yellow; */
 }
 
@@ -68,13 +119,20 @@ main {
     background-color: var(--bg-color);
     border-color: white;
     font-family: var(--poppins);
+    border: 2px solid #fff;
+
+    padding: 0.4rem 4rem;
+    border-radius: 6px;
 }
 
 .hero-buttons button {
     color: white;
     background-color: var(--pink2);
-    border-color: white;
+    border: 2px solid #fff;
     font-family: var(--poppins);
+
+    padding: 0.4rem 3rem;
+    border-radius: 6px;
 }
 
 /*====================FOOTER====================*/
@@ -90,7 +148,7 @@ footer {
 
 footer ul li {
     list-style: none;
-    margin-top: 0.5rem;
+    margin-top: 0.7rem;
 }
 
 footer ul li a {
