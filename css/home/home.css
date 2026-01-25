@@ -38,10 +38,6 @@ main {
     max-height: 30em;
 }
 
-/* .hero-photo {
-    background-color: red;
-} */
-
 .hero-photo {
   position: relative;
   display: inline-block;
