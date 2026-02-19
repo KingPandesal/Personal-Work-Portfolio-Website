@@ -1,0 +1,106 @@
+:root{
+    --bg-color: #2E0918;
+    --lighter-bg-color: #4F1029;
+    --pink: #F6AEAC;
+    --pink2: #E3008C;
+    --protest-strike: 'Protest Strike', sans-serif;
+    --qwigley: 'Qwigley', cursive;
+    --poppins: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    position: relative;
+    overflow: hidden;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+/* Media queries */
+
+/* ==================== TABLET ====================*/
+@media (max-width: 1024px) {
+    
+
+}
+
+/* ==================== PHONE ====================*/
+@media (max-width: 600px) {
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 3em 0 3em;
+    }
+
+    .hero-photo {
+        display: none;
+    }
+
+    .hero-photo-mobile {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1em;
+    }
+
+    .hero-photo-mobile img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 0.5em;
+    }
+
+    .img-quote {
+        display: none;
+    }
+    
+    .img-quote-mobile {
+        text-align: center;
+    }
+
+    .highlight-name {
+        color: white;
+        text-decoration: none;
+    }
+
+    .mobile-only {
+        display: inline;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .hero-text-buttons {
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .hero-buttons a {
+        text-align: center;
+    }
+
+    /*====================FOOTER====================*/
+
+    footer ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1em;
+    }
+}
+

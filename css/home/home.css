@@ -43,6 +43,10 @@ main {
   display: inline-block;
 }
 
+.hero-photo-mobile {
+    display: none;
+}
+
 .hero-photo img {
     height: 100%;
     border-radius: 0 0 0 100px;
@@ -62,6 +66,19 @@ main {
 
     font-family: var(--poppins);
     font-size: 1vw;
+    line-height: 1.3;
+
+    border-radius: 10px;
+}
+
+.img-quote-mobile {
+    max-width: 100%;
+
+    padding: 0.3rem 0.6rem;
+    color: white;
+
+    font-family: var(--poppins);
+    font-size: 2vw;
     line-height: 1.3;
 
     border-radius: 10px;
@@ -87,6 +104,10 @@ main {
 .highlight-name {
     color: var(--pink2);
     text-decoration: underline;
+}
+
+.mobile-only {
+    display: none;
 }
 
 .hero-text p {
