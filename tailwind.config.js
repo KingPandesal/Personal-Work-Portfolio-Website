@@ -9,7 +9,7 @@ export default {
           dark: '#9d174d',
         }
       }
-    },
+    }
   },
   plugins: [],
 }

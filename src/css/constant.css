@@ -1,0 +1,30 @@
+/* Custom brand colors for direct use */
+  .text-brand { 
+    color: #db2777; 
+  }
+  .text-brand-light { 
+    color: #fce7f3; 
+  }
+  .text-brand-dark { 
+    color: #9d174d; 
+  }
+
+  .bg-brand { 
+    background-color: #db2777; 
+  }
+  .bg-brand-light { 
+    background-color: #fce7f3; 
+  }
+  .bg-brand-dark { 
+    background-color: #9d174d; 
+  }
+
+  .border-brand { 
+    border-color: #db2777; 
+  }
+  .border-brand-light { 
+    border-color: #fce7f3; 
+  }
+  .border-brand-dark { 
+    border-color: #9d174d; 
+  }
